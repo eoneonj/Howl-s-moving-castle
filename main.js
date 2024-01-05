@@ -214,12 +214,9 @@ function frameSecond(){
         gameScore();
     }
 
-    if(timer>2900){
-        fin.play();
-    }
-
     if(timer>3000){
         ctx.clearRect(0,0,canvas.width, canvas.height);
+        fin.play();
         background_sound.pause();
         back2.draw();
         ctx.fillStyle = 'skyblue';
